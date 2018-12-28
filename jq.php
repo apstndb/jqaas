@@ -4,7 +4,7 @@ function call_jq($contents, $filter)
 {
     $filter = escapeshellarg($filter);
 
-    $cmd = './jq ' . $filter;
+    $cmd = 'jq ' . $filter;
 
     $temp = tmpfile();
 
